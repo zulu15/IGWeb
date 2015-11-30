@@ -4,7 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.ig.modelo.Socio;
-import com.ig.services.RegisterService;
+import com.ig.services.SocioService;
+
 
 public class ValidadorCampos {
 
@@ -23,7 +24,7 @@ public class ValidadorCampos {
 			errores.put("passwordInvalido", "La clave no puede estar vacia o excede el tamaño permitido");
 
 		}
-		if (socio.getEmail() == null || socio.getEmail().isEmpty() || socio.getEmail().indexOf("@")==-1 || !RegisterService.isEmailDisponible(socio) ) {
+		if (socio.getEmail() == null || socio.getEmail().isEmpty() || socio.getEmail().indexOf("@")==-1 || !SocioService.isEmailDisponible(socio) ) {
 			errores.put("emailInvalido", "Email incorrecto o en uso");
 
 		}

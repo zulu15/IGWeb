@@ -38,7 +38,7 @@
 						<strong>Ingrese sus datos</strong>
 					</div>
 					<div class="panel-body">
-						<form:form method="post" action="administrador" commandName="adminForm">
+						<form:form method="post" action="" commandName="adminForm">
 
 							<br />
 							<div class="form-group input-group">

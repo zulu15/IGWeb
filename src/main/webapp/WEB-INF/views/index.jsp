@@ -168,7 +168,7 @@
 			<div class="col-sm-1"></div>
 			<div class="col-sm-5">
 
-				<div class="form-box">
+				<div class="form-box" id="registrarse">
 					<div class="form-top">
 						<div class="form-top-left">
 							<h3>Registrate ahora</h3>

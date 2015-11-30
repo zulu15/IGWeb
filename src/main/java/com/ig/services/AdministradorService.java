@@ -9,13 +9,12 @@ import org.springframework.stereotype.Service;
 import com.ig.modelo.Administrador;
 import com.ig.util.HibernateUtil;
 
-
 @Service
-public class LoginService {
+public class AdministradorService {
 
 	private Session hibernate = HibernateUtil.getSessionFactory().openSession();
-	
-	public  boolean isAdministrador(Administrador admin) throws Exception {
+
+	public boolean isAdministrador(Administrador admin) throws Exception {
 		try {
 
 			String hql = "SELECT admin.acceso FROM Administrador admin WHERE admin.password = :password AND admin.email = :email ";
@@ -30,5 +29,4 @@ public class LoginService {
 		}
 		return false;
 	}
-
 }

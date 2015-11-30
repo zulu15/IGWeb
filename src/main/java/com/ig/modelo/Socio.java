@@ -15,13 +15,7 @@ public class Socio {
 
 	transient private String disciplina;
 
-	public String getDisciplina() {
-		return disciplina;
-	}
 
-	public void setDisciplina(String disciplina) {
-		this.disciplina = disciplina;
-	}
 
 	@Id
 	@Column(name = "soc_email", nullable = false)
@@ -99,6 +93,14 @@ public class Socio {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+	
+	public String getDisciplina() {
+		return disciplina;
+	}
+
+	public void setDisciplina(String disciplina) {
+		this.disciplina = disciplina;
 	}
 
 	@Override
